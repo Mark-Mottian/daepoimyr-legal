@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="How to request deletion of data associated with Pulse, the minimalist precision puzzle game.">
+  <title>Pulse Data Deletion</title>
+  <style>
+    :root { color-scheme:dark; --bg:#0c1018; --surface:#131a26; --text:#f2f5f7; --muted:#b8c4cf; --accent:#62d5ff; --line:#293547; --warning:#ffd479; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:1rem; line-height:1.7; }
+    main, footer { width:min(100% - 2rem,780px); margin-inline:auto; }
+    main { padding-block:3.5rem 2rem; }
+    footer { padding-block:1.5rem 3rem; border-top:1px solid var(--line); color:var(--muted); font-size:.925rem; }
+    h1, h2 { line-height:1.2; letter-spacing:-.02em; }
+    h1 { margin:0 0 .65rem; color:var(--accent); font-size:clamp(2rem,7vw,3rem); }
+    h2 { margin:2.75rem 0 .75rem; font-size:clamp(1.3rem,4vw,1.65rem); }
+    p, ol, ul { margin-block:.75rem; }
+    ol, ul { padding-left:1.35rem; }
+    li + li { margin-top:.4rem; }
+    a { color:var(--accent); text-decoration-thickness:.08em; text-underline-offset:.18em; }
+    a:hover { text-decoration-thickness:.14em; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:2px; }
+    .skip-link { position:absolute; top:.75rem; left:.75rem; z-index:1; padding:.55rem .8rem; background:var(--accent); color:var(--bg); transform:translateY(-180%); }
+    .skip-link:focus { transform:translateY(0); }
+    .lead { color:var(--muted); }
+    .request, .warning { margin-block:2rem; padding:1.15rem 1.25rem; background:var(--surface); border:1px solid var(--line); border-radius:.5rem; }
+    .request { border-left:4px solid var(--accent); }
+    .warning { border-left:4px solid var(--warning); }
+    .request h2, .warning h2 { margin-top:0; }
+    .email-subject { overflow-wrap:anywhere; }
+    nav { margin-block:1.75rem; padding-bottom:1.25rem; border-bottom:1px solid var(--line); }
+    nav a + a { margin-left:1rem; }
+    @media (max-width:480px) { main { padding-top:2.25rem; } nav a { display:block; width:fit-content; } nav a + a { margin:.45rem 0 0; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content">
+    <header>
+      <h1>Pulse Data Deletion</h1>
+      <p class="lead">Pulse is published under the Daepoimyr brand by independent developer Mark Mottian.</p>
+      <p>This page explains how to request deletion of data associated with Pulse. Pulse has no user account system, so this is a data deletion process—not an account deletion process. You do not need to install Pulse or have a Pulse account to make a request.</p>
+    </header>
+
+    <nav aria-label="Related pages">
+      <a href="https://mark-mottian.github.io/daepoimyr-legal/pulse/privacy/">Privacy Policy</a>
+      <a href="https://mark-mottian.github.io/daepoimyr-legal/pulse/support/">Pulse Support</a>
+      <a href="../../">Daepoimyr home</a>
+    </nav>
+
+    <section class="request" aria-labelledby="request-deletion">
+      <h2 id="request-deletion">How to request deletion</h2>
+      <p>To request deletion of Pulse data associated with you:</p>
+      <ol>
+        <li>Email <a href="mailto:mark.mottian@gmail.com?subject=Pulse%20Data%20Deletion%20Request">mark.mottian@gmail.com</a>.</li>
+        <li>Use the subject <strong class="email-subject">Pulse Data Deletion Request</strong>.</li>
+        <li>In your message, provide only enough information to help identify the relevant records. Because Pulse has no account and generally uses opaque or pseudonymous identifiers, the developer may ask for limited additional information needed to locate and verify a relevant record.</li>
+      </ol>
+    </section>
+
+    <aside class="warning" aria-labelledby="do-not-send">
+      <h2 id="do-not-send">Do not send sensitive credentials</h2>
+      <p>Do not email passwords, payment-card information, raw Google Play purchase tokens, Play Integrity tokens, private keys, service-account credentials, or other sensitive credentials.</p>
+    </aside>
+
+    <section aria-labelledby="local-data">
+      <h2 id="local-data">Data stored locally on your device</h2>
+      <p>Local Pulse data may include game progress, level progression or completion, scores and accuracy, your Daily first-run result, preferences and settings, your analytics-consent choice, notification preferences and reminder time, a local signed entitlement cache, and Pulse Circuit progression.</p>
+      <p>You can generally remove local-only Pulse data using <strong>Android Settings → Apps → Pulse → Storage → Clear data</strong>, or by uninstalling Pulse. Android backup, restoration, manufacturer settings, or other device behavior outside Pulse's control may affect copies managed by Android or your device provider.</p>
+    </section>
+
+    <section aria-labelledby="online-data">
+      <h2 id="online-data">Backend and online data</h2>
+      <p>Depending on the features used, Pulse may hold or process limited online records such as Daily or service request metadata, commerce-verification records, purchase and entitlement lifecycle records, hashed purchase-token identity, installation identifiers or hashes, entitlement issuance or revocation information, security and fraud-prevention records, and support communications.</p>
+      <p>Where reasonably possible and where applicable law permits or requires it, the developer can delete or de-identify records that are no longer necessary for providing requested support, operating the service, purchase administration, security, fraud prevention, or legal compliance.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">Information that may need to be retained</h2>
+      <p>Deletion does not always mean every record can be removed immediately. Some information may need to be retained where reasonably necessary for:</p>
+      <ul>
+        <li>Google Play purchase-entitlement administration;</li>
+        <li>refunds, revocations, and voided-purchase handling;</li>
+        <li>fraud and abuse prevention;</li>
+        <li>security investigations;</li>
+        <li>accounting or tax obligations;</li>
+        <li>legal or regulatory compliance;</li>
+        <li>disputes; or</li>
+        <li>the establishment, exercise, or defence of legal claims.</li>
+      </ul>
+      <p>Where appropriate, retained information may be restricted to those purposes. Pulse does not promise deletion of every purchase or security record on demand.</p>
+    </section>
+
+    <section aria-labelledby="analytics">
+      <h2 id="analytics">Optional analytics</h2>
+      <p>Pulse uses GameAnalytics only after explicit analytics consent. You can decline analytics and can change your choice later in Pulse Settings. Requests concerning analytics data may also be subject to GameAnalytics' applicable processor and developer mechanisms and retention practices.</p>
+    </section>
+
+    <section aria-labelledby="google-play">
+      <h2 id="google-play">Google Play purchase and payment information</h2>
+      <p>Google Play separately processes purchase and payment information. Pulse does not receive or store payment-card details. For purchase-account or payment information held by Google, you may also need to use Google's own Google Play or account controls. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://support.google.com/googleplay/">Google Play Help</a>.</p>
+    </section>
+
+    <section aria-labelledby="support-email">
+      <h2 id="support-email">Support email data</h2>
+      <p>A support email may contain the sender's email address, message content, and diagnostic information they voluntarily provide. You can request deletion using the same address and subject listed above, subject to the legitimate retention needs explained on this page.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>For data deletion, privacy questions, or support, email Mark Mottian at <a href="mailto:mark.mottian@gmail.com">mark.mottian@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Pulse · Published under the Daepoimyr brand by independent developer Mark Mottian.</p>
+  </footer>
+</body>
+</html>
