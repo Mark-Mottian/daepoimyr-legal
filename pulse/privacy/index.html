@@ -1,26 +1,173 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Privacy Policy for Pulse, the minimalist precision puzzle game published under the Daepoimyr brand.">
   <title>Pulse Privacy Policy</title>
   <style>
-    body {
-      background: #0C1018;
-      color: #F2F5F7;
-      font-family: Arial, sans-serif;
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 60px 24px;
-      line-height: 1.6;
-    }
-    h1 { color: #62D5FF; }
-    a { color: #62D5FF; }
+    :root { color-scheme: dark; --bg:#0c1018; --surface:#131a26; --text:#f2f5f7; --muted:#b8c4cf; --accent:#62d5ff; --line:#293547; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:1rem; line-height:1.7; }
+    main, footer { width:min(100% - 2rem, 780px); margin-inline:auto; }
+    main { padding-block:3.5rem 2rem; }
+    footer { padding-block:1.5rem 3rem; border-top:1px solid var(--line); color:var(--muted); font-size:.925rem; }
+    h1, h2 { line-height:1.2; letter-spacing:-.02em; }
+    h1 { margin:0 0 .5rem; color:var(--accent); font-size:clamp(2rem,7vw,3rem); }
+    h2 { margin:2.75rem 0 .75rem; font-size:clamp(1.3rem,4vw,1.65rem); }
+    p, ul { margin-block:.75rem; }
+    ul { padding-left:1.35rem; }
+    li + li { margin-top:.35rem; }
+    a { color:var(--accent); text-decoration-thickness:.08em; text-underline-offset:.18em; }
+    a:hover { text-decoration-thickness:.14em; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:2px; }
+    .skip-link { position:absolute; top:.75rem; left:.75rem; z-index:1; padding:.55rem .8rem; background:var(--accent); color:var(--bg); transform:translateY(-180%); }
+    .skip-link:focus { transform:translateY(0); }
+    .dates, .summary { color:var(--muted); }
+    .summary { margin-block:2rem; padding:1.15rem 1.25rem; background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:.5rem; }
+    nav { margin-block:1.75rem; padding-bottom:1.25rem; border-bottom:1px solid var(--line); }
+    nav a + a { margin-left:1rem; }
+    @media (max-width:480px) { main { padding-top:2.25rem; } nav a { display:block; width:fit-content; } nav a + a { margin:.45rem 0 0; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 </head>
 <body>
-  <h1>Pulse Privacy Policy</h1>
-  <p>The Pulse Privacy Policy will be published here before release.</p>
-  <p><a href="../../">← Daepoimyr</a></p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content">
+    <header>
+      <h1>Pulse Privacy Policy</h1>
+      <p class="dates"><strong>Effective:</strong> 8 September 2026<br><strong>Last updated:</strong> 8 September 2026</p>
+      <p>Pulse is a minimalist precision puzzle game for Android (package <code>com.daepoimyr.pulse</code>). Pulse is published under the Daepoimyr brand by independent developer Mark Mottian.</p>
+    </header>
+
+    <nav aria-label="Related pages">
+      <a href="../support/">Pulse Support</a>
+      <a href="../../">Daepoimyr home</a>
+    </nav>
+
+    <aside class="summary" aria-label="Privacy summary">
+      <strong>In brief:</strong> Pulse has no user account, no advertising, and no subscription. Most game data stays on your device. Optional analytics is sent only after you allow it. Limited data is processed online when you use Daily Pulse, verify or restore a Pulse Circuit purchase, use security checks, or contact support.
+    </aside>
+
+    <section aria-labelledby="operator">
+      <h2 id="operator">1. Who operates Pulse</h2>
+      <p>Mark Mottian is the independent developer responsible for Pulse. Daepoimyr is a publishing brand, not a registered company. Questions or privacy requests may be sent to <a href="mailto:mark.mottian@gmail.com">mark.mottian@gmail.com</a>.</p>
+    </section>
+
+    <section aria-labelledby="local-data">
+      <h2 id="local-data">2. Information stored on your device</h2>
+      <p>Depending on the features you use, Pulse stores game progress, level completion and progression, scores and accuracy, your Daily first-run result, preferences and settings, your analytics-consent choice, notification preferences and reminder time, an opaque installation identity, a signed entitlement cache, and Pulse Circuit progression.</p>
+      <p>This local information supports gameplay, preferences, reminders, and offline entitlement checks. It is not cloud account sync. It normally remains until you clear Pulse's app data or uninstall the app, subject to Android backup or device behavior outside Pulse's control.</p>
+    </section>
+
+    <section aria-labelledby="analytics">
+      <h2 id="analytics">3. Optional GameAnalytics analytics</h2>
+      <p>Pulse uses GameAnalytics only if you expressly allow analytics. GameAnalytics does not initialize or transmit analytics while your choice is unknown or declined. Analytics is not required to play, and you can change your choice later in Settings.</p>
+      <p>When enabled, analytics may include gameplay and activity events, session information, progression and interaction events, the Pulse build or app version, device model, platform and operating-system metadata, a pseudonymous random SDK identifier, and coarse geographic information that GameAnalytics derives from IP or network information. This helps understand how Pulse is used, diagnose patterns, and improve gameplay and reliability.</p>
+      <p>Pulse does not provide GameAnalytics with your real name, a Pulse account email address, phone number, contacts, or precise GPS location. Pulse does not request Android's advertising-ID permission and is not configured to intentionally collect the Google Advertising ID.</p>
+    </section>
+
+    <section aria-labelledby="purchases">
+      <h2 id="purchases">4. Pulse Circuit and Google Play purchases</h2>
+      <p>Pulse Circuit is an optional, one-time, non-consumable in-app product purchased through Google Play. Google processes the payment. Pulse does not receive or store your payment-card details.</p>
+      <p>To verify, acknowledge, restore, and maintain legitimate ownership, Pulse and its backend process information such as the product ID, Google Play purchase token during verification, a stored hash of that token, purchase and acknowledgement state, Google Play order ID when returned, purchase time, an opaque installation identity or hash, entitlement status, entitlement issuance or expiry information, and related security and audit lifecycle events. The backend also processes relevant refund, revocation, voided-purchase, and reported purchase lifecycle changes using Google Play Real-time Developer Notifications and Voided Purchases reconciliation.</p>
+    </section>
+
+    <section aria-labelledby="integrity">
+      <h2 id="integrity">5. Play Integrity and security checks</h2>
+      <p>Pulse uses the standard Google Play Integrity service for sensitive commerce flows. Integrity checks help prevent fraud, verify purchases, and assess app and device authenticity. Pulse and its backend may process an integrity token, request details, verification results, and related technical and security information for those purposes. Google performs part of this processing. Pulse does not receive your Google password.</p>
+    </section>
+
+    <section aria-labelledby="daily">
+      <h2 id="daily">6. Daily Pulse backend</h2>
+      <p>Pulse uses Supabase-hosted backend infrastructure to retrieve Daily puzzles. No Pulse account is required. When your device requests a Daily puzzle, routine service information may be processed, including request time, IP or network information, technical request metadata, and operational logs. This information is used to deliver, secure, maintain, and troubleshoot the service—not for advertising.</p>
+    </section>
+
+    <section aria-labelledby="notifications">
+      <h2 id="notifications">7. Notifications</h2>
+      <p>If you enable Daily reminders, Pulse schedules them locally on your device using your selected preferences and time. Pulse does not currently use remote push notifications or a remote push token for Daily reminders. You can change reminders in Settings and control notification permission through Android settings.</p>
+    </section>
+
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">8. Sharing gameplay results</h2>
+      <p>When you choose to share a Daily result, Pulse creates the share content locally and opens Android's share sheet. Pulse does not automatically upload the result to a Pulse social server. You choose the receiving app or service, whose own privacy terms then apply.</p>
+    </section>
+
+    <section aria-labelledby="support">
+      <h2 id="support">9. Support communications</h2>
+      <p>If you contact support, you voluntarily provide your email address, message, and anything else you choose to include, such as device model, Android version, Pulse version, or issue context. This information is used to respond, troubleshoot, protect the service, and keep an appropriate support record.</p>
+      <p>Do not send passwords, payment-card information, raw purchase tokens, Integrity tokens, service-account credentials, private keys, or other private credentials. See the <a href="../support/">Pulse Support page</a> for help.</p>
+    </section>
+
+    <section aria-labelledby="purposes">
+      <h2 id="purposes">10. Why information is processed</h2>
+      <p>Pulse processes information as needed to provide game features; save settings and progress; deliver Daily puzzles; schedule local reminders; process and restore entitlements; prevent fraud and misuse; protect app, device, and backend integrity; operate, troubleshoot, and improve Pulse; provide optional consent-based analytics; respond to support requests; meet legal obligations; and establish or defend legal claims.</p>
+    </section>
+
+    <section aria-labelledby="providers">
+      <h2 id="providers">11. Service providers</h2>
+      <p>Pulse relies on the following providers, which process information under their own applicable terms and privacy commitments:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy">Google</a> — Google Play distribution and Billing, Play Integrity, purchase lifecycle information, and support email hosting.</li>
+        <li><a href="https://supabase.com/privacy">Supabase</a> — backend infrastructure for Daily Pulse and commerce verification.</li>
+        <li><a href="https://www.gameanalytics.com/trust/privacy-faq">GameAnalytics</a> — optional analytics after consent only.</li>
+        <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages</a> — hosting this legal and support site. GitHub states that it logs visitors' IP addresses for security.</li>
+      </ul>
+      <p>These legal pages contain no tracking scripts or analytics and intentionally set no cookies. Hosting providers may still process routine technical information needed to serve and secure their services.</p>
+    </section>
+
+    <section aria-labelledby="sale-ads">
+      <h2 id="sale-ads">12. No sale and no targeted advertising</h2>
+      <p>Pulse does not sell personal data, contains no advertising, and does not use personal data for targeted advertising.</p>
+    </section>
+
+    <section aria-labelledby="retention">
+      <h2 id="retention">13. Retention</h2>
+      <p>Retention depends on the type of information and why it is needed. Local data generally remains until you clear the app's data or uninstall it. Optional analytics is retained according to the developer's GameAnalytics configuration and GameAnalytics terms. Backend operational, security, and commerce records are kept only as reasonably necessary to operate entitlements, investigate fraud or incidents, reconcile purchase lifecycle changes, and satisfy accounting, legal, or dispute requirements. Support communications are kept only as reasonably necessary to handle the request and related records. Providers may retain service information under their own policies and legal obligations.</p>
+    </section>
+
+    <section aria-labelledby="international">
+      <h2 id="international">14. International processing</h2>
+      <p>Pulse's service providers operate internationally. Information may therefore be processed in countries other than your own, where privacy laws may differ. Providers use the locations and transfer safeguards described in their terms, privacy notices, and data-processing commitments.</p>
+    </section>
+
+    <section aria-labelledby="choices-rights">
+      <h2 id="choices-rights">15. Your choices and rights</h2>
+      <ul>
+        <li>Play without analytics, decline analytics, or change your analytics choice in Settings.</li>
+        <li>Enable or disable Daily reminders and manage Android notification permission.</li>
+        <li>Choose whether and where to share a Daily result.</li>
+        <li>Clear local Pulse data through Android settings or uninstall Pulse.</li>
+        <li>Use Google Play controls for purchases and payment information.</li>
+        <li>Contact the developer to ask about access, correction, deletion, restriction, objection, or withdrawal of consent where applicable law provides those rights.</li>
+      </ul>
+      <p>Because Pulse has no account and uses opaque or pseudonymous identifiers, the developer may need enough information to verify and locate a record and may not be able to link every record to you. Some information may be retained where reasonably necessary for security, fraud prevention, transaction records, legal compliance, or legal claims. You may also have the right to complain to your local data-protection authority.</p>
+    </section>
+
+    <section aria-labelledby="children">
+      <h2 id="children">16. Children's privacy and audience</h2>
+      <p>Pulse is a general puzzle game and is not specifically designed or directed at children under 13. Its intended Google Play audience is ages 13–15, 16–17, and 18 and over. If you believe a child under 13 has provided personal information directly to the developer, please contact the developer so the matter can be reviewed and appropriate action taken.</p>
+    </section>
+
+    <section aria-labelledby="security">
+      <h2 id="security">17. Security</h2>
+      <p>Reasonable technical and organizational measures are used to protect information, including encrypted network connections, token hashing where described, signed entitlement data, Google Play purchase verification, and Play Integrity checks. No method of storage or transmission is completely secure, so absolute security cannot be guaranteed.</p>
+    </section>
+
+    <section aria-labelledby="updates">
+      <h2 id="updates">18. Changes to this policy</h2>
+      <p>This policy may be updated when Pulse, its providers, or legal requirements change. The revised policy will be posted at this URL and the “Last updated” date will change. Material changes may also be communicated in the app or through another appropriate channel where required.</p>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">19. Contact</h2>
+      <p>For privacy questions, rights requests, or support, email Mark Mottian at <a href="mailto:mark.mottian@gmail.com">mark.mottian@gmail.com</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Pulse · Published under the Daepoimyr brand by independent developer Mark Mottian.</p>
+  </footer>
 </body>
 </html>
