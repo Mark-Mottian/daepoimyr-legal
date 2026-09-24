@@ -39,7 +39,7 @@
   <main id="main-content">
     <header>
       <h1>Pulse Privacy Policy</h1>
-      <p class="dates"><strong>Effective:</strong> 8 September 2026<br><strong>Last updated:</strong> 23 September 2026</p>
+      <p class="dates"><strong>Effective:</strong> 8 September 2026<br><strong>Last updated:</strong> 24 September 2026</p>
       <p>Pulse is a minimalist precision puzzle game for Android (package <code>com.daepoimyr.pulse</code>) and Web. Pulse is published under the Daepoimyr brand by independent developer Mark Mottian. The public Web version contains Pulse Core and Daily Pulse; Pulse Circuit is offered only on supported native builds.</p>
     </header>
 
@@ -66,7 +66,7 @@
 
     <section aria-labelledby="analytics">
       <h2 id="analytics">3. Optional analytics</h2>
-      <p>On Web, Pulse sends a limited set of product usage events to a dedicated Supabase-hosted ingestion service only after you expressly allow analytics. This helps us understand engagement, diagnose usage patterns, and improve Pulse. Events cover sessions, Home and Levels visits, Core starts, attempts, results and explicit exits, Daily starts and results, tutorial completion, and fixed categories of major runtime errors. They may include level identifiers, attempt counts, accuracy, and app version. They do not include tap coordinates, free-form error text, or saved progress files. Web does not initialize GameAnalytics.</p>
+      <p>On Web, Pulse sends a limited set of product usage events to a dedicated Supabase-hosted ingestion service only after you expressly allow analytics. This helps us understand engagement, diagnose usage patterns, and improve Pulse. Events cover sessions, Home and Levels visits, Core starts, attempts, results and explicit exits, Daily starts and results, tutorial completion, user-initiated Daily/Core sharing actions, coarse incoming share attribution, and fixed categories of major runtime errors. They may include level or Daily identifiers, attempt counts, accuracy, share surface and first-run/replay type, and app version. They do not include tap coordinates, free-form error text, personal referral identifiers, or saved progress files. Web does not initialize GameAnalytics.</p>
       <p>Only after Web consent is allowed, Pulse creates a random anonymous analytics identifier in local site storage, separate from game progress. Clearing site data resets it. Before consent, or after a decline, Pulse creates no Web analytics identifier and sends no analytics requests. Withdrawing consent stops future analytics transmission and removes the local Web analytics identifier without clearing gameplay progress. Analytics failures do not affect play. Pulse does not fingerprint your browser or use analytics for advertising, cross-site profiling, or sale of personal information.</p>
       <p>On supported native builds, Pulse uses GameAnalytics only if you expressly allow analytics. GameAnalytics does not initialize or transmit analytics while your choice is unknown or declined. Analytics is not required to play, and you can change your choice later in Settings.</p>
       <p>When enabled on a supported native build, analytics may include gameplay and activity events, session information, progression and interaction events, the Pulse build or app version, device model, platform and operating-system metadata, a pseudonymous random SDK identifier, and coarse geographic information that GameAnalytics derives from IP or network information. This helps understand how Pulse is used, diagnose patterns, and improve gameplay and reliability.</p>
@@ -96,7 +96,8 @@
 
     <section aria-labelledby="sharing">
       <h2 id="sharing">8. Sharing gameplay results</h2>
-      <p>On supported native builds, when you choose to share a Daily result, Pulse creates the share content locally and opens the system share sheet. Pulse does not automatically upload the result to a Pulse social server. You choose the receiving app or service, whose own privacy terms then apply.</p>
+      <p>On supported native builds, when you choose to share a Daily result, Pulse creates the share content locally and opens the system share sheet. On Web, you may choose to preview, share, copy a link to, or download a locally generated Daily or Pulse Core result card. Pulse does not automatically upload the card to a Pulse social server. A native share action hands the content to the app or service you choose; that recipient has its own privacy practices, which Pulse cannot control after handoff.</p>
+      <p>Web share links carry only a coarse source value, <code>daily-share</code> or <code>core-share</code>, and no personal referral identifier. Pulse analyzes incoming share attribution only when you allow optional analytics. Sharing itself does not require analytics consent and introduces no advertising tracking.</p>
     </section>
 
     <section aria-labelledby="support">
@@ -142,7 +143,7 @@
       <ul>
         <li>On Web and supported native builds, play without analytics, decline analytics, or change your analytics choice in Settings. Withdrawing Web consent stops future analytics transmission and removes the local Web analytics identifier.</li>
         <li>On supported native builds, enable or disable Daily reminders and manage notification permission.</li>
-        <li>Choose whether and where to share a Daily result when sharing is available.</li>
+        <li>Choose whether and where to share a Daily or Pulse Core result when sharing is available.</li>
         <li>Clear local Pulse data through browser, app, or device settings, or uninstall Pulse.</li>
         <li>Use the applicable platform-store controls for native purchases and payment information.</li>
         <li>Contact the developer to ask about access, correction, deletion, restriction, objection, or withdrawal of consent where applicable law provides those rights.</li>
