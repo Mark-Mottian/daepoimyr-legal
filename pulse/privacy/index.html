@@ -39,8 +39,8 @@
   <main id="main-content">
     <header>
       <h1>Pulse Privacy Policy</h1>
-      <p class="dates"><strong>Effective:</strong> 8 September 2026<br><strong>Last updated:</strong> 24 September 2026</p>
-      <p>Pulse is a minimalist precision puzzle game for Android (package <code>com.daepoimyr.pulse</code>) and Web. Pulse is published under the Daepoimyr brand by independent developer Mark Mottian. The public Web version contains Pulse Core and Daily Pulse; Pulse Circuit is offered only on supported native builds.</p>
+      <p class="dates"><strong>Effective:</strong> 8 September 2026<br><strong>Last updated:</strong> 5 October 2026</p>
+      <p>Pulse is a minimalist precision puzzle game for Android (package <code>com.daepoimyr.pulse</code>) and Web. Pulse is published under the Daepoimyr brand by independent developer Mark Mottian. The public Web version contains Pulse Core and Daily Pulse. The Android app contains 150 free Core levels and offers the optional one-time Pulse Premium 100-level pack.</p>
     </header>
 
     <nav aria-label="Related pages">
@@ -50,7 +50,7 @@
     </nav>
 
     <aside class="summary" aria-label="Privacy summary">
-      <strong>In brief:</strong> Pulse has no user account, no advertising, and no subscription. Most game data stays on your device. Optional Web product analytics is sent to Pulse's Supabase backend only after you explicitly opt in; it helps us understand engagement and improve Pulse, and is deleted from Pulse analytics storage after 90 days. Supported native builds use GameAnalytics only after consent. Limited data is also processed online when you use Daily Pulse or contact support, and on supported native builds when you verify or restore a Pulse Circuit purchase or use security checks.
+      <strong>In brief:</strong> Pulse has no user account, no advertising, and no subscription. Most game data stays on your device. Optional Web product analytics is sent to Pulse's Supabase backend only after you explicitly opt in; it helps us understand engagement and improve Pulse, and is deleted from Pulse analytics storage after 90 days. The Android app uses GameAnalytics only after an eligible adult's consent. Limited data is also processed online when you use Daily Pulse or contact support, and in the Android app when you verify or restore a Pulse Premium purchase or use security checks.
     </aside>
 
     <section aria-labelledby="operator">
@@ -60,7 +60,7 @@
 
     <section aria-labelledby="local-data">
       <h2 id="local-data">2. Information stored on your device</h2>
-      <p>Depending on the features and platform you use, Pulse stores game progress, level completion and progression, scores and accuracy, your Daily first-run result, preferences and settings, your analytics-consent choice, notification preferences and reminder time where applicable, an opaque installation identity, a signed entitlement cache, and Pulse Circuit progression on supported native builds.</p>
+      <p>Depending on the features and platform you use, Pulse stores game progress, level completion and progression, scores and accuracy, your Daily first-run result, preferences and settings, your analytics-consent choice, notification preferences and reminder time where applicable, an opaque installation identity, a signed entitlement cache, and Pulse Premium progression in the Android app.</p>
       <p>This local information supports gameplay, preferences, reminders, and offline entitlement checks where applicable. It is not cloud account sync. It normally remains until you clear Pulse's local app or site data or uninstall the app, subject to browser, operating-system, backup, or device behavior outside Pulse's control. Web progress remains in local site storage.</p>
     </section>
 
@@ -68,15 +68,17 @@
       <h2 id="analytics">3. Optional analytics</h2>
       <p>On Web, Pulse sends a limited set of product usage events to a dedicated Supabase-hosted ingestion service only after you expressly allow analytics. This helps us understand engagement, diagnose usage patterns, and improve Pulse. Events cover sessions, Home and Levels visits, Core starts, attempts, results and explicit exits, Daily starts and results, tutorial completion, user-initiated Daily/Core sharing actions, coarse incoming share attribution, and fixed categories of major runtime errors. They may include level or Daily identifiers, attempt counts, accuracy, share surface and first-run/replay type, and app version. They do not include tap coordinates, free-form error text, personal referral identifiers, or saved progress files. Web does not initialize GameAnalytics.</p>
       <p>Only after Web consent is allowed, Pulse creates a random anonymous analytics identifier in local site storage, separate from game progress. Clearing site data resets it. Before consent, or after a decline, Pulse creates no Web analytics identifier and sends no analytics requests. Withdrawing consent stops future analytics transmission and removes the local Web analytics identifier without clearing gameplay progress. Analytics failures do not affect play. Pulse does not fingerprint your browser or use analytics for advertising, cross-site profiling, or sale of personal information.</p>
-      <p>On supported native builds, Pulse uses GameAnalytics only if you expressly allow analytics. GameAnalytics does not initialize or transmit analytics while your choice is unknown or declined. Analytics is not required to play, and you can change your choice later in Settings.</p>
-      <p>When enabled on a supported native build, analytics may include gameplay and activity events, session information, progression and interaction events, the Pulse build or app version, device model, platform and operating-system metadata, a pseudonymous random SDK identifier, and coarse geographic information that GameAnalytics derives from IP or network information. This helps understand how Pulse is used, diagnose patterns, and improve gameplay and reliability.</p>
+      <p>In the Android app, Pulse uses GameAnalytics only if you are at least 18 and expressly allow analytics. GameAnalytics does not initialize or transmit analytics while your age is unknown, you are under 18, you prefer not to say, or your consent is unknown or declined. Analytics is not required to play, and eligible adults can change their choice later in Settings.</p>
+      <p>The Android age check evaluates the date of birth locally and stores an age category, not the date of birth. Pulse does not send the date of birth to GameAnalytics.</p>
+      <p>When enabled in the Android app, analytics may include gameplay and activity events, session information, progression and interaction events, the Pulse build or app version, device model, platform and operating-system metadata, pseudonymous random app, session and event identifiers, Google App Set ID when available, and coarse geographic information that GameAnalytics derives from IP or network information. Purchase and restore interactions and limited purchase or entitlement states, such as pending, purchased, verifying and verified, are also sent after analytics consent. These events and identifiers help understand engagement, gameplay and the purchase flow, diagnose patterns, and improve Pulse. Pulse does not send purchase tokens, receipts, order IDs or payment details to GameAnalytics.</p>
       <p>Pulse does not provide GameAnalytics with your real name, a Pulse account email address, phone number, contacts, or precise GPS location. Pulse does not request Android's advertising-ID permission and is not configured to intentionally collect the Google Advertising ID.</p>
     </section>
 
     <section aria-labelledby="purchases">
-      <h2 id="purchases">4. Pulse Circuit and native purchases</h2>
-      <p>Pulse Circuit is an optional, one-time, non-consumable in-app product on supported native builds. The applicable platform store processes the payment. Pulse does not receive or store your payment-card details. Web does not offer Pulse Circuit commerce.</p>
+      <h2 id="purchases">4. Pulse Premium and Android purchases</h2>
+      <p>Pulse Premium is an optional, one-time, non-consumable in-app product in the Android app that unlocks 100 levels. Google Play processes the payment. Pulse does not receive or store your payment-card details. Web does not offer Pulse Premium commerce.</p>
       <p>To verify, acknowledge, restore, and maintain legitimate ownership, Pulse and its backend process information such as the product ID, Google Play purchase token during verification, a stored hash of that token, purchase and acknowledgement state, Google Play order ID when returned, purchase time, an opaque installation identity or hash, entitlement status, entitlement issuance or expiry information, and related security and audit lifecycle events. The backend also processes relevant refund, revocation, voided-purchase, and reported purchase lifecycle changes using Google Play Real-time Developer Notifications and Voided Purchases reconciliation.</p>
+      <p>Purchase and entitlement checks, including automatic ownership reconciliation, are separate from optional analytics and can run when analytics is off. Declining analytics does not disable the verification needed to provide or restore Premium access.</p>
     </section>
 
     <section aria-labelledby="integrity">
@@ -119,6 +121,7 @@
         <li><a href="https://supabase.com/privacy">Supabase</a> — backend infrastructure for Daily Pulse and native commerce verification, plus dedicated first-party Web analytics ingestion and storage after Web consent.</li>
         <li><a href="https://www.gameanalytics.com/trust/privacy-faq">GameAnalytics</a> — optional analytics on supported native builds after consent only; it is not initialized by Web.</li>
         <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages</a> — hosting this legal and support site. GitHub states that it logs visitors' IP addresses for security.</li>
+        <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a> — hosting the app-linked information pages at pulse.daepoimyr.com/app/. Hosting services can process routine request information such as IP addresses to serve and secure their services.</li>
       </ul>
       <p>These legal pages contain no tracking scripts or analytics and intentionally set no cookies. Hosting providers may still process routine technical information needed to serve and secure their services.</p>
     </section>
@@ -130,7 +133,7 @@
 
     <section aria-labelledby="retention">
       <h2 id="retention">13. Retention</h2>
-      <p>Retention depends on the type of information and why it is needed. Local data generally remains until you clear the app or site data or uninstall Pulse. Pulse's Supabase analytics storage has an active 90-day deletion schedule for optional Web analytics events. Optional native analytics is retained according to the developer's GameAnalytics configuration and GameAnalytics terms. Backend operational, security, and commerce records are kept only as reasonably necessary to operate entitlements, investigate fraud or incidents, reconcile purchase lifecycle changes, and satisfy accounting, legal, or dispute requirements. Support communications are kept only as reasonably necessary to handle the request and related records. Hosting providers may separately retain routine request metadata such as IP/network information and timestamps for operations and security.</p>
+      <p>Retention depends on the type of information and why it is needed. Local data generally remains until you clear the app or site data or uninstall Pulse. Pulse's Supabase analytics storage has an active 90-day deletion schedule for optional Web analytics events. Optional Android analytics is retained according to the developer's GameAnalytics configuration and applicable GameAnalytics terms. Retention of backend operational, security, commerce and support records depends on operational and provider settings and the purpose of the record, including entitlement administration, refunds or revocations, fraud prevention, security, support, and applicable legal or dispute requirements. Hosting providers may separately retain routine request metadata such as IP/network information and timestamps for operations and security. Contact the developer about retention for a specific record.</p>
     </section>
 
     <section aria-labelledby="international">
@@ -149,6 +152,7 @@
         <li>Contact the developer to ask about access, correction, deletion, restriction, objection, or withdrawal of consent where applicable law provides those rights.</li>
       </ul>
       <p>Because Pulse has no account and uses opaque or pseudonymous identifiers, the developer may need enough information to verify and locate a record and may not be able to link every record to you. Some information may be retained where reasonably necessary for security, fraud prevention, transaction records, legal compliance, or legal claims. You may also have the right to complain to your local data-protection authority.</p>
+      <p>Turning Android analytics off stops future optional analytics delivery; it does not itself delete previously delivered records or records needed for purchase verification. See the <a href="../data-deletion/">data deletion request instructions</a>. Do not send passwords, purchase or Integrity tokens, payment-card details or private keys.</p>
     </section>
 
     <section aria-labelledby="children">
